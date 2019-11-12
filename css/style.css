@@ -43,6 +43,24 @@
 	font-size: 20px;
 }
 
+.c2a1 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+ .c2a1 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
 /*****************/
 
 
@@ -60,7 +78,7 @@
 }
 .schedule-warp:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,.07);
-  border: solid 1px rgba(100,40,145,.97);
+  border: solid 1px rgba(40,40,42,.97);
 }
 .schedule{
   padding:100px 0px;
@@ -69,7 +87,7 @@
 }
 .schedule-tag{
   color:#fff;
-  background-color: #6164b2;
+  background-color: #404042;
   padding:3px 8px;
   margin-right: 15px;
   width: 90px;
@@ -93,7 +111,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .schedule-card:hover:after {
-  background: #8a56d1;
+  background: #8d7576;
   width: 25px;
 }
 .schedule-card:after {
@@ -119,7 +137,7 @@
   -webkit-align-items: center;
   align-items: center;
   padding: 10px 20px;
-  color: #6164B2;
+  color: rgb(53, 85, 77);
   transition: all 0.2s ease-in;
 /*    justify-content: center;*/
 }
@@ -128,10 +146,10 @@
   margin-bottom:50px;
   font-weight: bold;
   font-size: 20px;
-  color: #6164B2;    
+  color: rgb(44, 58, 31);    
   }
-/***********/
-
+/**********
+// tabela que nao esta a ser usada
 
 table {
   width: 100%;
@@ -173,4 +191,4 @@ table {
 .stage-venus {background-color: #FF8A65};
 .stage-mars {background-color: #B3E5FC};
 .stage-jupiter {background-color: #81D4FA};
-.stage-saturn {background-color: #26C6DA};
+.stage-saturn {background-color: #26C6DA};*/
