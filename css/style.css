@@ -8,9 +8,23 @@
 
 @media only screen and (max-width: 600px) {
     #navbar {
-      background-color: lightblue;
+      background-color: lightgrey;
     }
   }
+
+  #contactos a:hover {
+    text-decoration: none;
+    color:gray;
+   }
+   #contactos a {
+    text-decoration: none;
+    color:white;
+   }
+
+#map {
+    height: 300px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
   
 #clockdiv{
 	font-family: sans-serif;
@@ -59,6 +73,13 @@
   background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
   background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
   background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
+#contactos .col-lg-6{
+  padding:0px;
+}
+#contactos .row{
+  padding:0px;
 }
 
 /*****************/
@@ -148,47 +169,3 @@
   font-size: 20px;
   color: rgb(44, 58, 31);    
   }
-/**********
-// tabela que nao esta a ser usada
-
-table {
-  width: 100%;
-  max-width: 50rem;
-  
-  tr:nth-child(even) th {
-      color: #ccc;
-      font-weight: normal;
-  }
-  
-  th,
-  td {
-      padding: 0.5rem 1rem;
-  }
-  
-  th {
-      font-weight: normal;
-      border-top: thin dotted #ccc;
-  }
-  
-  td {
-      font-size: 0.8rem;
-      font-weight: bold;
-      line-height: 1.4;
-      border-radius: 0.2rem;
-      transition: opacity 0.3s ease;
-  }
-  
-  td > span {
-      font-size: 0.8em;
-      font-weight: normal;
-      display: block;
-      width: 100%;
-  }
-}
-
-.stage-earth {background-color: #FFA726};
-.stage-mercury {background-color: #9CCC65};
-.stage-venus {background-color: #FF8A65};
-.stage-mars {background-color: #B3E5FC};
-.stage-jupiter {background-color: #81D4FA};
-.stage-saturn {background-color: #26C6DA};*/

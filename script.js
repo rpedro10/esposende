@@ -1,10 +1,10 @@
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 400) {
+  if (document.documentElement.scrollTop > 455) {
     document.getElementById("navbar").style.backgroundColor="lightgrey";
 }
-  if (document.documentElement.scrollTop < 400) {
+  if (document.documentElement.scrollTop < 455) {
     document.getElementById("navbar").style.backgroundColor="transparent";
 } 
 }
@@ -28,8 +28,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  /**document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";*/
   document.getElementsByClassName("days").innerHTML = days ;
   var clock = document.getElementById('clockdiv');
   var daysSpan = clock.querySelector('.days');
@@ -49,3 +49,14 @@ var x = setInterval(function() {
   }
 }, 1000);
 /***************** */
+//map
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 41.5165939, lng: -8.7853508};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
