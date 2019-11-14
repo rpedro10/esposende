@@ -21,7 +21,7 @@
     <div id="wrapper">
       <div id="barra">      
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-          <a class="navbar-brand" href="#">Seminário </a>
+          <a class="navbar-brand" href="#">Congresso Literacia</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,6 +42,7 @@
             </ul>
           </div>
         </nav>
+        
       </div>
       <div id="banner_principal">
         <div class="container" style="padding-top:150px;">
@@ -73,9 +74,10 @@
                       partilha em torno da temática e em diferentes settings, na medida em que todos sabemos que
                       a literacia em saúde condiciona a forma como cada um de nós é capaz de tomar decisões
                       acertadas sobre saúde.<br>
-                      Uma baixa Literacia em Saúde pode dar origem, por exemplo, a um maior número de
-                      internamentos e a uma utilização mais frequente de serviços de urgência e, também, a uma
-                      menor prevalência de atitudes individuais e familiares preventivas no campo da saúde.
+                      <!--<br>
+
+                      <a href="projeto.html" class="btn btn-outline-secondary btn-sm" role="button" aria-disabled="true">Saber Mais</a>
+                      -->
                     </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -88,6 +90,9 @@
                         <li>Divulgação dos resultados até 15 de março</li>
                       </ul>
                   </p>
+                 <!-- <br>
+                  <a href="projeto.html" class="btn btn-outline-secondary btn-md" role="button" aria-disabled="true">Enviar Poster</a>
+-->
                 </div>
                 <div class="col-12 text-center">
                     <a href="projeto.html" class="btn btn-outline-primary btn-lg" role="button" aria-disabled="true">Saber Mais</a>
@@ -151,16 +156,16 @@
         <br>
         <br>
         <div class="row">
-          <div class="col-lg-4 col-sm-12">
-              <img src="./img/esposende-logo.png" class="img-fluid" style="width:55%">
+          <div class="col-lg-4 col-sm-12" style="padding-bottom:20px">
+              <img src="./img/esposende-logo.png" class="img-fluid">
 
           </div>
-          <div class="col-lg-4 col-sm-12">
-              <img src="./img/isave-logo.png" class="img-fluid" style="width:55%">
+          <div class="col-lg-4 col-sm-12"  style="padding-bottom:20px">
+              <img src="./img/isave-logo.png" class="img-fluid">
 
           </div>
-          <div class="col-lg-4 col-sm-12">
-              <img src="./img/logo_laclis-1.png" class="img-fluid" style="width:55%">
+          <div class="col-lg-4 col-sm-12"  style="padding-bottom:20px">
+              <img src="./img/logo_laclis-1.png" class="img-fluid" >
 
           </div>
         </div>
@@ -212,6 +217,62 @@
   
   </footer>
   <!-- Footer -->
+  <script>
+    
+/** COUNTER */
+// Set the date we're counting down to
+var countDownDate = new Date("May 5, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  /**document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";*/
+  document.getElementsByClassName("days").innerHTML = days ;
+  var clock = document.getElementById('clockdiv');
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  //var secondsSpan = clock.querySelector('.seconds');
+
+  daysSpan.innerHTML = days;
+  hoursSpan.innerHTML = hours;
+  minutesSpan.innerHTML = minutes;
+
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+/***************** */
+//map
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 41.5165939, lng: -8.7853508};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+  
+  </script>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
