@@ -17,6 +17,7 @@
     ul.timeline {
       list-style-type: none;
       position: relative;
+      padding-top:11px;
     }
     ul.timeline:before {
       content: ' ';
@@ -45,11 +46,8 @@
       z-index: 400;
     }
      #programa p,h5{
-      width:260px;
+      width:200px;
     }
-     #download_programa{
-       padding-bottom: 22px;
-     }
 
   }
   #navbar{
