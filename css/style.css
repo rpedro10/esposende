@@ -44,6 +44,9 @@
       height: 20px;
       z-index: 400;
     }
+    p{
+      width:200px;
+    }
 
   }
   #navbar{
