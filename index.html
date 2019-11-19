@@ -47,10 +47,10 @@
       <div id="banner_principal">
         <div class="container" style="padding-top:170px;">
             <div class="container d-flex justify-content-center">
-              <img src="./img/logo-small.png" class="mx-auto d-block">
+              <img src="./img/logo.png" class="mx-auto d-block" style="width: 32em;">
             </div>
         </div>
-        <div class="col-lg-12 text-center" style="background-color:beige;margin-top: 222px;">
+        <div class="col-lg-12 text-center" style="background-color:beige;margin-top: 100px;">
           <p>
             3ª Edição
             <br> 30 de Abril | Axis Ofir Beach Resort Hotel
@@ -133,9 +133,8 @@
         <!-- Row -->
         <div class="row justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="mb-3 text-white font-weight-medium">Inscrever-me</h2>
+            <h2 class="mb-3 text-white font-weight-medium">Inscrever-me ou Submissão de Posters</h2>
             <hr style="width:55px; border: 2px solid rgb(238, 231, 231);">
-
             <p class="font-weight-light text-white op-8">Lorem ipsum dolor sit amet, consectetur adipiscelit. Nam malesu dolor sit amet, consectetur adipiscelit. consectetur adipiscelit. Nam malesu dolor.</p>
             <a class="btn btn-danger-gradiant btn-md border-0 text-white mt-3 text-uppercase" href="#"><span>Inscrever-me</span></a>
           </div>
@@ -174,14 +173,14 @@
     <br>
     <div id="contactos" style="background-color:cornflowerblue">
           <div class="row ">
-              <div class="col-lg-6 col-sm-12">
+              <div class="col-lg-6 col-sm-12" style="padding-bottom: 30px;">
                 <br>
                 <br>
                 <div class="col">
                   <h2 class= "text-center text-white">Contactos</h2>
                   <hr style="width:55px; border: 2px solid rgb(255, 247, 246);">
                 </div>
-                <div class="container" style="padding-left: 130px;">
+                <div class="container offset-1" >
                     <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i> Facebook</a><br><br>
                     <a href="#"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                       geral@cm-esposende.pt</a><br><br>
@@ -267,6 +266,16 @@ function initMap() {
       document.getElementById('map'), {zoom: 15, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.documentElement.scrollTop > 500) {
+    document.getElementById("navbar").style.backgroundColor="rgba(0, 0, 0, 0.8)";
+}
+  if (document.documentElement.scrollTop < 500) {
+    document.getElementById("navbar").style.backgroundColor="rgba(0, 0, 0, 0.2)";
+} 
 }
   
   </script>
